@@ -1,4 +1,5 @@
 import { signIn } from "@/lib/auth"
+import SubmitButton from "@/components/SubmitButton"
 
 export default function SignInPage() {
     return (
@@ -19,12 +20,7 @@ export default function SignInPage() {
                             await signIn("google", { redirectTo: "/" })
                         }}
                     >
-                        <button
-                            type="submit"
-                            className="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                        >
-                            Sign in with Google
-                        </button>
+                        <SubmitButton text="Sign in with Google" loadingText="Signing in..." />
                     </form>
                 </div>
             </div>
