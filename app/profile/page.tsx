@@ -34,15 +34,7 @@ export default async function ProfilePage() {
             <h1 className="mb-8 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
                 Your Profile
             </h1>
-
             <ProfileCard user={user} onSignOut={handleSignOut} />
-
-            <Link
-                href="/"
-                className="mt-8 text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
-            >
-                ← Back to Home
-            </Link>
         </div>
     )
 }
