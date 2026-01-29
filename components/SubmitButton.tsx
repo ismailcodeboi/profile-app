@@ -11,11 +11,13 @@ function cn(...inputs: ClassValue[]) {
 interface SubmitButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     text: string
     loadingText?: string
+    icon?: React.ReactNode
 }
 
 export default function SubmitButton({
     text,
     loadingText = "Loading...",
+    icon,
     className,
     ...props
 }: SubmitButtonProps) {
@@ -56,7 +58,10 @@ export default function SubmitButton({
                     {loadingText}
                 </>
             ) : (
-                text
+                <div className="flex items-center gap-2">
+                    {icon}
+                    {text}
+                </div>
             )}
         </button>
     )
