@@ -30,8 +30,8 @@ export default async function ProfilePage() {
     }
 
     return (
-        <div className="flex min-h-screen flex-col items-center justify-center bg-gray-50 p-4 dark:bg-gray-900">
-            <h1 className="mb-8 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <div className="flex min-h-screen flex-col items-center justify-center p-4">
+            <h1 className="mb-8 text-3xl font-bold tracking-tight">
                 Your Profile
             </h1>
             <ProfileCard user={user} onSignOut={handleSignOut} />

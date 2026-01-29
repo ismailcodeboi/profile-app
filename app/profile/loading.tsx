@@ -1,13 +1,13 @@
 export default function ProfileLoading() {
     return (
-        <div className="flex min-h-screen flex-col items-center justify-center bg-gray-50 p-4 dark:bg-gray-900">
-            <div className="mb-8 h-8 w-48 animate-pulse rounded bg-gray-200 dark:bg-gray-700"></div>
+        <div className="flex min-h-screen flex-col items-center justify-center">
+            <div className="mb-8 h-8 w-48 animate-pulse rounded"></div>
 
-            <div className="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl dark:bg-zinc-900">
-                <div className="h-32 bg-gray-200 dark:bg-gray-700 animate-pulse"></div>
+            <div className="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-xl">
+                <div className="h-32 animate-pulse"></div>
                 <div className="relative px-6 pb-8">
                     <div className="relative -mt-16 mb-6 flex justify-center">
-                        <div className="relative h-32 w-32 overflow-hidden rounded-full border-4 border-white bg-gray-200 shadow-lg dark:border-zinc-900 dark:bg-gray-700 animate-pulse"></div>
+                        <div className="relative h-32 w-32 overflow-hidden rounded-full border-4 border-white bg-gray-200 shadow-lg animate-pulse"></div>
                     </div>
 
                     <div className="text-center space-y-4">
